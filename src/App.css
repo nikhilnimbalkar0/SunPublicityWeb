@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Reserve space for fixed navbar so content is not overlapped */
+:root {
+  --navbar-height: 72px; /* adjust if your navbar height changes */
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding-top: var(--navbar-height);
+  overflow-x: hidden;
+}
